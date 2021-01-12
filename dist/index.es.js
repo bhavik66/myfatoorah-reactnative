@@ -219,7 +219,7 @@ var MFWebView$$1 = function (_Component) {
     _this.onNavigationStateChange = function (navigationState) {
       var url = navigationState.url;
 
-      var route = _this.props.route;
+      var route = _this.props.navigation.state;
       var navigation = _this.props.navigation;
       var apiLanguage = route.params.apiLanguage;
       var postExecuteCallback = route.params.postExecuteCallback;
@@ -299,7 +299,7 @@ var MFWebView$$1 = function (_Component) {
     value: function render() {
       var _this2 = this;
 
-      var route = this.props.route;
+      var route = this.props.navigation.state;
       var link = route.params.link;
 
 
